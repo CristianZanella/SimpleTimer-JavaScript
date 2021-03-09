@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="timer.css">
+    <!-- Título da Aba -->
+    <title>Timer JavaScript</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="page_header">
+        <h1>Timer</h1>
+    </header>
+
+    <section id="main_section">
+        <!-- Input das informações -->
+        <div id="input">
+            <!-- Horas do temporizador -->
+            <p id="hours_paragraph">
+                Hours:
+            </p>
+            <select name="hours" id="hours"></select>
+
+            <!-- Minutos do temporizador -->
+            <p id="minutes_paragraph">
+                Minutes:
+            </p>
+            <select name="minutes" id="minutes"></select>
+    
+            <!-- Segundos do temporizador -->
+            <p id="seconds_paragraph">
+                Seconds:
+            </p>
+            <select name="seconds" id="seconds"></select>
+    
+            <!-- Botão inicializador da contagem -->
+            <p>
+                <button id="start" onclick="startCountDown()">Start</button>
+            </p>
+        </div>
+
+        <!-- Output das informações -->
+        <div id="output">
+            <h3></h3>
+        </div>
+    </section>
+        
+    <!-- Rodapé -->
+    <footer id="page_footer">
+        <h6>@By Cristian Zanella</h6>
+    </footer>
+    
+    <!-- Link JavaScript -->
+    <script src="timer.js"></script>
+</body>
+</html>
